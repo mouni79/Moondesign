@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Prompt", sans-serif;
+}
+
+/*-------------- ENTETE ------------------*/
+#entete{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Prompt', sans-serif; 
+    margin: 15px; 
+}
+.moon{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+}
+.burger{
+    width:42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+}
+.burger span{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    display: block;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.burger span::before, .burger span::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+
+
+}
+.burger span::before{
+    transform: translateY(-10px);
+
+}
+
+.burger span::after{
+    transform: translateY(10px);
+    
+}
+.nav {
+    display: none;
+}
+
+
+/*------------PRESENTATION-----------*/
+#presentation {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.presentation-image {
+    margin: auto;
+    width: 65%;
+    border-radius: 25px;
+}
+.presentation-titre {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}
+
+.presentation-titre{
+    padding:auto;
+
+}
+
+/*----------------LOGO--------------*/
+
+#logos{
+    background-color: rgb(240, 233, 224);
+    margin: 150px 12px 60px 12px;
+    border-radius:38px;
+}
+.article1 {
+    position: relative;
+}
+.logo-péville{
+    margin: -139px 0;
+    width: 100%;
+    border-radius: 25px;
+    /* position: absolute;
+    bottom: 280px; */
+}
+.conteneur-texte-logos{
+    padding-bottom: 20px;
+}
+.logo-décocadre{
+    /* margin-top: 50px; */
+    width: 100%;
+    border-radius: 25px;
+}
+
+.logo-soustitre{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.logo-texte{
+    text-align:end;
+    font-weight:400px;
+    margin-right: 19px;
+    margin-left: 19px;
+}
+/*--------------service------------*/
+
+#service{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.article2{
+    position: relative;
+}
+.carte-img{
+  width: 90%;
+  border-radius: 20px;
+  
+}
+
+.soustitre{
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.texte{
+    text-align: center;
+    font-weight: 400;
+}
+
+.découvrez{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(211 211 211);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    padding-right: 20px;
+    width: 58px;
+}
+/*------------projets-------------*/
+
+#projets{
+    background-color: rgb(240, 233, 224);
+    margin: 150px 12px 60px 12px;
+}
+
+.carte-img{
+    width: 73%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.texte1{
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+/*---------footer-----------*/
+
+#footer{
+
+}
+
+.footer-MD{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer-DC{
+    height: 39px;
+    text-align: center;
+    font-weight: 405;
+
+}
+
+.footer-Dév{
+    text-align: center;
+    font-weight: 405;
+}
+
+.footer-images{
+    display: flex;
+    justify-content:space-around;
+}
